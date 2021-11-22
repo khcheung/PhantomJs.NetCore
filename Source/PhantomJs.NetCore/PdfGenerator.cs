@@ -62,7 +62,7 @@ namespace PhantomJs.NetCore
       var filename = Path.GetRandomFileName() + ".html";
       var absolutePath = Path.Combine(PhantomRootFolder, filename);
 
-      File.WriteAllText(absolutePath, html);
+      File.WriteAllText(absolutePath, html, System.Text.Encoding.UTF8);
 
       return filename;
     }
